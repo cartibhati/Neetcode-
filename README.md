@@ -8,6 +8,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
 
 - **Array and Hashing**
   - Contains Duplicate
+  - Valid Anagram
 
 ## 🛠️ Environment
 
