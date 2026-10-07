@@ -10,6 +10,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Contains Duplicate
   - Valid Anagram
   - Two Sum
+  - Group Anagrams
 
 ## 🛠️ Environment
 
