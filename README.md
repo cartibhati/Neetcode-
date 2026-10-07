@@ -11,6 +11,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Valid Anagram
   - Two Sum
   - Group Anagrams
+  - Top K Frequent Elements
 
 ## 🛠️ Environment
 
