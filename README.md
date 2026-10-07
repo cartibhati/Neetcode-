@@ -12,6 +12,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Two Sum
   - Group Anagrams
   - Top K Frequent Elements
+  - Product of Array Except Self
 
 ## 🛠️ Environment
 
