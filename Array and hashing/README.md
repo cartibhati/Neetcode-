@@ -25,3 +25,11 @@ This document serves as a quick revision guide for the core concepts and techniq
 ### 6. Product of Array Except Self
 - **Concept**: Prefix and Suffix Arrays
 - **Hint**: To achieve $O(N)$ without division, precompute two arrays: one storing the product of all elements to the left of the current index (`prefix`), and one for the right (`suffix`). The result at any index $i$ is simply `prefix[i] * suffix[i]`.
+
+### 7. Valid Sudoku
+- **Concept**: Hash Sets
+- **Hint**: Use hash sets to track seen numbers in rows, columns, and 3x3 sub-boxes. If a number is already in the set for the current row, column, or box, return false.
+
+### 8. Longest Consecutive Sequence
+- **Concept**: Hash Set
+- **Hint**: Insert all numbers into a hash set for $O(1)$ lookups. Iterate through the set and find the start of a sequence (a number where `num - 1` is not in the set). Then, keep checking for `num + 1` to find the length of the consecutive sequence.

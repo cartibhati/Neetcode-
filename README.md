@@ -14,6 +14,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Top K Frequent Elements
   - Product of Array Except Self
   - Valid Sudoku
+  - Longest Consecutive Sequence
 
 ## 🛠️ Environment
 
