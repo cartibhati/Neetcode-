@@ -13,6 +13,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Group Anagrams
   - Top K Frequent Elements
   - Product of Array Except Self
+  - Valid Sudoku
 
 ## 🛠️ Environment
 
