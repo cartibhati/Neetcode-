@@ -19,6 +19,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
 - **Stack**
   - Valid Parentheses
   - Min Stack
+  - Evaluate Reverse Polish Notation
 
 ## 🛠️ Environment
 
