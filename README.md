@@ -20,6 +20,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Valid Parentheses
   - Min Stack
   - Evaluate Reverse Polish Notation
+  - Daily Temperatures
 
 ## 🛠️ Environment
 
