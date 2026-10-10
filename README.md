@@ -21,6 +21,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Min Stack
   - Evaluate Reverse Polish Notation
   - Daily Temperatures
+  - Car Fleet
 
 ## 🛠️ Environment
 

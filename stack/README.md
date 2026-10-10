@@ -17,3 +17,8 @@ This document serves as a quick revision guide for the core concepts and techniq
 ### 4. Daily Temperatures
 - **Concept**: Monotonic Stack (Decreasing)
 - **Hint**: Maintain a monotonic stack storing pairs of `{temperature, index}` in decreasing order. For each day, pop elements from the stack while the current temperature is greater than the stack top's temperature, recording the index difference (`i - stidx`) as the number of days to wait. Then push the current day onto the stack.
+
+### 5. Car Fleet
+- **Concept**: Sorting + Stack (Time to Destination)
+- **Hint**: Pair position and speed for each car, then sort descending by starting position (closest to target first). Compute `time = (target - position) / speed` for each car. Iterate through cars; if the stack is empty or current `time > st.top()`, push `time` onto stack (starts a new fleet). Otherwise, the car catches up and joins the fleet ahead. The stack size gives total fleets.
+
