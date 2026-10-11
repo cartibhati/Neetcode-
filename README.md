@@ -16,6 +16,9 @@ The repository is organized by problem categories matching the Neetcode roadmap.
   - Valid Sudoku
   - Longest Consecutive Sequence
 
+- **Two Pointers**
+  - Valid Palindrome
+
 - **Stack**
   - Valid Parentheses
   - Min Stack
