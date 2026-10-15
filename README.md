@@ -18,6 +18,7 @@ The repository is organized by problem categories matching the Neetcode roadmap.
 
 - **Two Pointers**
   - Valid Palindrome
+  - Two Sum II
 
 - **Stack**
   - Valid Parentheses
