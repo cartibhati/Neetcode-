@@ -9,3 +9,7 @@ This document serves as a quick revision guide for the core concepts and techniq
 ### 2. Two Sum II (Input Array Is Sorted)
 - **Concept**: Two Pointers (Converging from both ends)
 - **Hint**: Since the array is **sorted**, place one pointer at the start (`i = 0`) and one at the end (`j = n - 1`). Check the sum of `nums[i] + nums[j]`. If it equals the target, return `{i+1, j+1}` (1-indexed). If the sum is too large, decrement `j`. If too small, increment `i`. The sorted property guarantees a solution exists.
+
+### 3. Container With Most Water
+- **Concept**: Two Pointers (Greedy, Converging from both ends)
+- **Hint**: Place one pointer at each end of the `height` array (`i = 0`, `j = n - 1`). The area is `min(height[i], height[j]) * (j - i)`. Always move the pointer pointing to the **shorter** line inward — keeping the taller line is the only chance to find a larger area. Track the maximum area seen so far and return it when the pointers meet.
