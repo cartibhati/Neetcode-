@@ -10,3 +10,8 @@ This document serves as a quick revision guide for the core concepts and techniq
 - **Concept**: Binary Search (Treat the 2D matrix as a flattened sorted array)
 - **Hint**: The matrix rows are sorted and each row starts greater than the last, so all `m * n` elements form one sorted sequence. Run a single binary search with `s = 0` and `e = m * n - 1`. Map any flat index `mid` back to 2D with `row = mid / n` and `col = mid % n`, then compare `matrix[row][col]` against the target exactly as in standard binary search.
 
+### 3. Koko Eating Bananas
+- **Concept**: Binary Search on Answer Space
+- **Hint**: The answer (eating speed `k`) lies between `1` and `max(piles)`. Binary search over this range. For a candidate speed `mid`, compute total hours needed using ceiling division: `hours += (pile + mid - 1) / mid` for each pile. If `totalHours <= h`, `mid` is feasible — save it as a candidate and try smaller (`e = mid - 1`). Otherwise go larger (`s = mid + 1`). Return the smallest feasible speed found.
+
+
