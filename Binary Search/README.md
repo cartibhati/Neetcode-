@@ -14,4 +14,8 @@ This document serves as a quick revision guide for the core concepts and techniq
 - **Concept**: Binary Search on Answer Space
 - **Hint**: The answer (eating speed `k`) lies between `1` and `max(piles)`. Binary search over this range. For a candidate speed `mid`, compute total hours needed using ceiling division: `hours += (pile + mid - 1) / mid` for each pile. If `totalHours <= h`, `mid` is feasible — save it as a candidate and try smaller (`e = mid - 1`). Otherwise go larger (`s = mid + 1`). Return the smallest feasible speed found.
 
+### 4. Find Minimum in Rotated Sorted Array
+- **Concept**: Binary Search on a Rotated Array
+- **Hint**: Compare `nums[mid]` with `nums[e]` (the rightmost element). If `nums[mid] < nums[e]`, the minimum is in the left half (including `mid`) — set `e = mid`. Otherwise the minimum is strictly in the right half — set `s = mid + 1`. The loop runs while `s < e` and terminates with `s` pointing at the minimum.
+
 
