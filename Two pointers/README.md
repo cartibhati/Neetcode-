@@ -13,3 +13,7 @@ This document serves as a quick revision guide for the core concepts and techniq
 ### 3. Container With Most Water
 - **Concept**: Two Pointers (Greedy, Converging from both ends)
 - **Hint**: Place one pointer at each end of the `height` array (`i = 0`, `j = n - 1`). The area is `min(height[i], height[j]) * (j - i)`. Always move the pointer pointing to the **shorter** line inward — keeping the taller line is the only chance to find a larger area. Track the maximum area seen so far and return it when the pointers meet.
+
+### 4. Trapping Rain Water
+- **Concept**: Two Pointers with Running Max
+- **Hint**: Use `left` and `right` pointers at both ends, tracking `max_left` and `max_right` as the running maximums seen so far. At each step, process the side with the **smaller current height** — the water it can trap is `max_left - height[left]` (or `max_right - height[right]`). This works because the shorter side is the bottleneck: the opposite side is guaranteed to be at least as tall. Move the processed pointer inward and accumulate the water.
