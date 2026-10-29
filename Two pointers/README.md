@@ -17,3 +17,8 @@ This document serves as a quick revision guide for the core concepts and techniq
 ### 4. Trapping Rain Water
 - **Concept**: Two Pointers with Running Max
 - **Hint**: Use `left` and `right` pointers at both ends, tracking `max_left` and `max_right` as the running maximums seen so far. At each step, process the side with the **smaller current height** — the water it can trap is `max_left - height[left]` (or `max_right - height[right]`). This works because the shorter side is the bottleneck: the opposite side is guaranteed to be at least as tall. Move the processed pointer inward and accumulate the water.
+
+### 5. 3Sum
+- **Concept**: Sort + Fix One + Two Pointers
+- **Hint**: Sort the array first. Fix the first element with index `i` (skip duplicates using `if (i > 0 && nums[i] == nums[i-1]) continue`). Then run a two-pointer search on the subarray to the right: if `nums[i] + nums[left] + nums[right] == 0`, record the triplet, advance both pointers, and skip duplicates on both sides. If the sum is too small, increment `left`; if too large, decrement `right`.
+
